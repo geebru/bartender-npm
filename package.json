@@ -1,0 +1,73 @@
+{
+  "name": "bartender-npm",
+  "version": "0.1.0",
+  "description": "npm run task for LookThink front-end.",
+  "keywords": [
+    "npm",
+    "css",
+    "scss",
+    "js",
+    "images",
+    "fonts",
+    "build",
+    "run"
+  ],
+  "author": "Greg Bruening",
+  "license": "MIT",
+
+  "main": "index.js",
+
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "colorguard": "^1.2.1",
+    "concat-cli": "^4.0.0",
+    "cssnano": "^3.10.0",
+    "doiuse": "^4.0.0",
+    "imagemin-cli": "^3.0.0",
+    "immutable-css": "^1.1.2",
+    "jshint": "^2.9.5",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
+    "onchange": "^3.3.0",
+    "postcss-cli-simple": "^1.0.4",
+    "postcss-custom-properties": "^7.0.0",
+    "postcss-critical-css": "^3.0.1",
+    "postcss-easing-gradients": "^1.2.3",
+    "postcss-flexbugs-fixes": "^3.3.0",
+    "stylelint": "^9.1.1",
+    "uglify-js": "^3.3.12"
+  },
+
+  "config": {
+    "srcDirectory": "src/",
+    "distDirectory": "dist/"
+  },
+
+  "scripts": {
+    "styles:sass": "node-sass $npm_package_config_srcDirectory/scss/ -o $npm_package_config_distDirectory/css/",
+    "styles:postcss": "postcss -c postcss-config.json $npm_package_config_distDirectory/css/",
+    "scripts:jshint": "jshint $npm_package_config_srcDirectory/js/**/*.js",
+    "scripts:es6-transpile": "babel $npm_package_config_srcDirectory/js/**/*.js",
+    "scripts:concat": "concat-cli -f $npm_package_config_srcDirectory/js/**/*.js -o $npm_package_config_distDirectory/scripts/scripts.js",
+    "scripts:uglify": "uglifyjs $npm_package_config_distDirectory/scripts/scripts.js",
+    "images:minify": "imagemin $npm_package_config_srcDirectory/images/**/* -o=$npm_package_config_distDirectory/images/",
+    "build:styles": "npm-run-all styles:*",
+    "build:scripts": "npm-run-all scripts:*",
+    "build:images": "npm-run-all images:*",
+    "watch:styles": "onchange $npm_package_config_srcDirectory/scss/**/* -- npm run build:styles",
+    "watch:scripts": "onchange $npm_package_config_srcDirectory/js/**/* -- npm run build:scripts",
+    "watch:images": "onchange $npm_package_config_srcDirectory/images/**/* -- npm run build:images",
+    "watch": "npm-run-all -c -p watch:*",
+    "dev": "npm-run-all build:*",
+
+    "pretest": "npm run dev",
+    "test:stylelint": "",
+    "test:immutable": "",
+    "test:colorguard": "",
+    "test": "",
+
+    "preprod": "npm run dev && npm run test",
+    "prod:cssnano": "",
+    "prod": ""
+  }
+}
