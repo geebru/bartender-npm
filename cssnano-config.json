@@ -1,0 +1,8 @@
+{
+  "use":
+    ["cssnano"],
+  "output": "styles.min.css",
+  "cssnano": {
+    "preset": "default"
+  }
+}
