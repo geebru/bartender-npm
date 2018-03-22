@@ -8,10 +8,10 @@
      "postcss-flexbugs-fixes"],
   "output": "styles.css",
   "autoprefixer": {
-    "browsers": "IE 9, iOS 7, > 5%"
+    "browsers": "IE 11, iOS 7, > 5%"
   },
   "doiuse": {
-    "browsers": "IE 9, iOS 7, > 5%"
+    "browsers": "IE 11, iOS 7, > 5%"
   },
   "postcss-critical-css": {
     "outputDest": "styles-critical.css",
