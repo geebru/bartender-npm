@@ -18,6 +18,7 @@
   "main": "index.js",
 
   "devDependencies": {
+    "autoprefixer": "^8.2.0",
     "babel-cli": "^6.26.0",
     "colorguard": "^1.2.1",
     "concat-cli": "^4.0.0",
@@ -35,6 +36,7 @@
     "postcss-easing-gradients": "^1.2.3",
     "postcss-flexbugs-fixes": "^3.3.0",
     "stylelint": "^9.1.1",
+    "svgo": "^1.0.5",
     "uglify-js": "^3.3.12"
   },
 
