@@ -1,5 +1,4 @@
 # Barte-npm-der
-#development #bartender #documentation
 
 Awful name, great tool.
 
