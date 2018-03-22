@@ -3,7 +3,6 @@
 Awful name, great tool.
 
 ## Purpose
-
 Bartender initially started as Grunt task runner for front-end development, focusing on CSS compiling and JS concatenation.
 
 It since has evolved to Gulp and now to pure npm and grown in size to include CSS validation, linting, and compiling, image/SVG minification, and JS validation, linting, and concatenating.
@@ -19,7 +18,6 @@ These were separated into individual variables to allow greater flexibility in t
 
 ## Plugins
 ### Styles
-
 - [stylelint  -  npm](https://www.npmjs.com/package/stylelint)
 - [immutable-css-cli  -  npm](https://www.npmjs.com/package/immutable-css-cli)
 - [colorguard  -  npm](https://www.npmjs.com/package/colorguard)
@@ -34,20 +32,17 @@ These were separated into individual variables to allow greater flexibility in t
 - [cssnano  -  npm](https://www.npmjs.com/package/cssnano)
 
 ### Scripts
-
 - [eslint  -  npm](https://www.npmjs.com/package/eslint)
 - [babel-cli  -  npm](https://www.npmjs.com/package/babel-cli)
 - [concat-cli  -  npm](https://www.npmjs.com/package/concat-cli)
 - [uglify-js  -  npm](https://www.npmjs.com/package/uglify-js)
 
 ### Assets
-
 - [imagemin-cli  -  npm](https://www.npmjs.com/package/imagemin-cli)
 - [svgo  -  npm](https://www.npmjs.com/package/svgo)
 
 
 ## Commands
-
 `npm run dev`
 Running “dev” will run the build task for each category: styles, scripts, and image assets.
 
