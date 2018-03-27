@@ -14,9 +14,7 @@
   ],
   "author": "Greg Bruening",
   "license": "MIT",
-
   "main": "index.js",
-
   "devDependencies": {
     "autoprefixer": "^8.2.0",
     "babel-cli": "^6.26.0",
@@ -39,7 +37,6 @@
     "svgo": "^1.0.5",
     "uglify-js": "^3.3.12"
   },
-
   "config": {
     "srcDirectory": "src",
     "srcDirectoryStyles": "$npm_package_config_srcDirectory/scss",
@@ -50,7 +47,6 @@
     "distDirectoryAssets": "$npm_package_config_distDirectory/assets",
     "distDirectoryScripts": "$npm_package_config_distDirectory/scripts"
   },
-
   "scripts": {
     "style:stylelint": "stylelint '$npm_package_config_srcDirectoryStyles/**/*.scss",
     "style:immutable": "immutable-css $npm_package_config_srcDirectoryStyles/**/*.scss",
@@ -71,14 +67,12 @@
     "watch:images": "onchange $npm_package_config_srcDirectoryAssets/images/**/* -- npm run build:images",
     "watch": "npm-run-all -c -p watch:*",
     "dev": "npm-run-all build:*",
-
     "pretest": "npm run dev",
     "test:stylelint": "stylelint '$npm_package_config_distDirectoryStyles/**/*.css",
     "test:immutable": "immutable-css $npm_package_config_distDirectoryStyles/**/*.css",
     "test:colorguard": "colorguard $npm_package_config_distDirectoryStyles/**/*.css",
     "test:eslint": "eslint $npm_package_config_distDirectoryScripts/**/*.js",
     "test": "npm-run-all test:*",
-
     "preprod": "npm run dev && npm run test",
     "prod:cssnano": "postcss -c cssnano-config.json $npm_package_config_distDirectoryStyles/**/*.css",
     "prod": "npm-run-all prod:*"

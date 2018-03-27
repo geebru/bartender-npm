@@ -90,7 +90,12 @@
     "number-no-trailing-zeros": true,
 
     "property-case": "lower",
-    "property-no-unknown": true,
+    "property-no-unknown": [true, {
+      "ignoreProperties": [
+        "critical-selector",
+        "critical-filename"
+      ]
+    }],
     "property-no-vendor-prefix": true,
 
     "rule-empty-line-before": ["always", {
