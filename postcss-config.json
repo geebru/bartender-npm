@@ -11,7 +11,12 @@
     "browsers": "IE 11, iOS 7, > 5%"
   },
   "doiuse": {
-    "browsers": "IE 11, iOS 7, > 5%"
+    "browsers": "IE 11, iOS 7, > 5%",
+    "ignore": ["flexbox"],
+    "ignoreFiles": [
+      "**/normalize.scss",
+      "**/reset.scss"
+    ]
   },
   "postcss-critical-css": {
     "outputDest": "styles-critical.css",
