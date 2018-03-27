@@ -38,14 +38,12 @@
     "uglify-js": "^3.3.12"
   },
   "config": {
-    "srcDirectory": "src",
-    "srcDirectoryStyles": "$npm_package_config_srcDirectory/scss",
-    "srcDirectoryAssets": "$npm_package_config_srcDirectory/assets",
-    "srcDirectoryScripts": "$npm_package_config_srcDirectory/js",
-    "distDirectory": "dist",
-    "distDirectoryStyles": "$npm_package_config_distDirectory/css",
-    "distDirectoryAssets": "$npm_package_config_distDirectory/assets",
-    "distDirectoryScripts": "$npm_package_config_distDirectory/scripts"
+    "srcDirectoryStyles": "src/scss",
+    "srcDirectoryAssets": "src/assets",
+    "srcDirectoryScripts": "src/js",
+    "distDirectoryStyles": "dist/css",
+    "distDirectoryAssets": "dist/assets",
+    "distDirectoryScripts": "dist/scripts"
   },
   "scripts": {
     "style:stylelint": "stylelint '$npm_package_config_srcDirectoryStyles/**/*.scss'",
