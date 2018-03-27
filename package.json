@@ -48,7 +48,7 @@
     "distDirectoryScripts": "$npm_package_config_distDirectory/scripts"
   },
   "scripts": {
-    "style:stylelint": "stylelint '$npm_package_config_srcDirectoryStyles/**/*.scss",
+    "style:stylelint": "stylelint '$npm_package_config_srcDirectoryStyles/**/*.scss'",
     "style:immutable": "immutable-css $npm_package_config_srcDirectoryStyles/**/*.scss",
     "style:colorguard": "colorguard $npm_package_config_srcDirectoryStyles/**/*.scss",
     "styles:sass": "node-sass $npm_package_config_srcDirectoryStyles -o $npm_package_config_distDirectoryStyles",
