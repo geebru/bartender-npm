@@ -6,7 +6,11 @@
     }],
     "at-rule-name-case": "lower",
     "at-rule-name-space-after": "always",
-    "at-rule-no-unknown": true,
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": [
+        "critical"
+      ]
+    }],
     "at-rule-semicolon-newline-after": "always",
 
     "block-closing-brace-empty-line-before": "never",
