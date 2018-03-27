@@ -8,7 +8,6 @@
     "scss",
     "js",
     "images",
-    "fonts",
     "build",
     "run"
   ],
@@ -65,7 +64,6 @@
     "watch:images": "onchange $npm_package_config_srcDirectoryAssets/images/**/* -- npm run build:images",
     "watch": "npm-run-all -c -p watch:*",
     "dev": "npm-run-all build:*",
-    "pretest": "npm run dev",
     "test:stylelint": "stylelint '$npm_package_config_distDirectoryStyles/**/*.css",
     "test:immutable": "immutable-css $npm_package_config_distDirectoryStyles/**/*.css",
     "test:colorguard": "colorguard $npm_package_config_distDirectoryStyles/**/*.css",
