@@ -19,7 +19,7 @@
     ]
   },
   "postcss-critical-css": {
-    "outputDest": "styles-critical.css",
+    "outputDest": "dist/css/critical.css",
     "minify": false
   }
 }
