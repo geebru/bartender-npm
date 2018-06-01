@@ -31,6 +31,9 @@ The options for PostCSS and cssnano exist in separate files within the project t
 	- [postcss-custom-properties  -  npm](https://www.npmjs.com/package/postcss-custom-properties)
 	- [postcss-easing-gradients  -  npm](https://www.npmjs.com/package/postcss-easing-gradients)
 	- [postcss-flexbugs-fixes  -  npm](https://www.npmjs.com/package/postcss-flexbugs-fixes)
+	- [postcss-nested  -  npm](https://www.npmjs.com/package/postcss-nested)
+	- [postcss-normalize  -  npm](https://www.npmjs.com/package/postcss-normalize)
+	- [postcss-preset-env  -  npm](https://www.npmjs.com/package/postcss-preset-env)
 - [cssnano  -  npm](https://www.npmjs.com/package/cssnano)
 
 ### Scripts
