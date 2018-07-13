@@ -12,6 +12,7 @@
 *.swp
 *.swo
 *~
+*.orig
 
 # Packages #
 ############
@@ -37,7 +38,17 @@ ehthumbs.db
 Icon?
 Thumbs.db
 
-*.lock
-package-lock.json
+# Build files #
+###############
+composer.lock
+node_modules/
 
-node_modules
+# App specific #
+###############
+*.codekit
+*.sublime-*
+.vscode
+.idea
+
+# Project specific #
+####################
