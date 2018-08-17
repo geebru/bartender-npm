@@ -3,13 +3,13 @@ module.exports = {
     require('autoprefixer')({
       grid: true
     }),
-    require('postcss-css-variables')({
-      preserve: true
-    }),
     require('postcss-easy-import')({
       prefix: '_'
     }),
     require('postcss-nesting'),
+    require('postcss-css-variables')({
+      preserve: true
+    }),
     require('postcss-critical-css')({
       minify: false
     }),
